@@ -2,7 +2,7 @@
 # Author: Song Kai
 # Description: Display a triangular pattern
 # Created: 20130215
-# Last Modified: 20130215
+# Last Modified: 20130221
 
 def check(str):
   if str.isdigit():
@@ -31,12 +31,10 @@ def calcdig(n):
 def work(n):
   dig=n+calcdig(n)
   forma="{0:>%ds}"%dig
+  string=""
   for i in range(1,n+1):
-      string=""
-      for j in range(1,i+1):
-          string=string+" "+str(i+1-j)
-      
-      print(forma.format(string))
+    string=" "+str(i)+string;
+    print(forma.format(string))
   
 num=init()
 work(num)

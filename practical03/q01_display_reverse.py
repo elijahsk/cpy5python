@@ -2,7 +2,7 @@
 # Author: Song Kai
 # Description: Display an integer in reverse order
 # Created: 20130215
-# Last Modified: 20130215
+# Last Modified: 20130221
 
 def check(str):
   if str.isdigit():
@@ -18,10 +18,12 @@ def init():
   return n
 
 def work():
-  return n[::-1]
+  return num[::-1]
 
 def outit():
-  print(n)  
+  k=0
+  while (num[k]=='0'): k+=1
+  print(num[k:])  
   
 
 num=init()

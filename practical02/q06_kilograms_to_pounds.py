@@ -4,8 +4,9 @@
 # Created: 20130201
 # Last Modified: 20130201
 
-
+# print title
 print("Kilograms Pounds")
+#print the conversion line by line
 for i in range(1,11):
     print("{0:<9}".format(i),"{0:<9.1f}".format(i*2.2))
 

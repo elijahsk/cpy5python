@@ -5,16 +5,20 @@
 # Last Modified: 20130215
 
 def gcd(x,y):
+    # make the larger one in front
     if x<y:
         x+=y
         y=x-y
         x-=y
     r=x%y
+    # actual finding gcd process
     while r!=0:
         x=y
         y=r
         r=x%y
     return y
+
+# main
 
 print(gcd(24,16))
 print(gcd(255,25))
